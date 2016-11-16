@@ -1,0 +1,4 @@
+C:\Users\Kateryna_Tsopa\Desktop\Task\SDSK.API\DAL\bin\Debug\DAL.dll
+C:\Users\Kateryna_Tsopa\Desktop\Task\SDSK.API\DAL\bin\Debug\DAL.pdb
+C:\Users\Kateryna_Tsopa\Desktop\Task\SDSK.API\DAL\obj\Debug\DAL.dll
+C:\Users\Kateryna_Tsopa\Desktop\Task\SDSK.API\DAL\obj\Debug\DAL.pdb
