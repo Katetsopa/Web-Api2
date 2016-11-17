@@ -38,6 +38,5 @@ C:\Users\Kateryna_Tsopa\Desktop\Task\SDSK.API\Model\bin\Debug\RabbitMQ.Client.xm
 C:\Users\Kateryna_Tsopa\Desktop\Task\SDSK.API\Model\bin\Debug\System.Net.Http.Formatting.xml
 C:\Users\Kateryna_Tsopa\Desktop\Task\SDSK.API\Model\bin\Debug\System.Web.Http.xml
 C:\Users\Kateryna_Tsopa\Desktop\Task\SDSK.API\Model\bin\Debug\System.Web.Http.WebHost.xml
-C:\Users\Kateryna_Tsopa\Desktop\Task\SDSK.API\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
 C:\Users\Kateryna_Tsopa\Desktop\Task\SDSK.API\Model\obj\Debug\SDSK.API.Model.dll
 C:\Users\Kateryna_Tsopa\Desktop\Task\SDSK.API\Model\obj\Debug\SDSK.API.Model.pdb
