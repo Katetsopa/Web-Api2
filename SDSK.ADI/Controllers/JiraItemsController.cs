@@ -6,9 +6,12 @@ using SDSK.API.Model;
 
 namespace SDSK.API.Controllers
 {
+    [RoutePrefix("api/jiraitems")]
+
     public class JiraItemsController : ApiController
-    {     
+    {
         //GET api/jiraitems/{id}
+       // [Route("{id:int}")]
         public JiraItem Get(int id = 1)
         {
             var jiraItem = Data.JiraItems.SingleOrDefault(x => x.JiraItemId == id);
@@ -23,20 +26,21 @@ namespace SDSK.API.Controllers
             }
         }
 
-        // POST: api/JiraItems
-        public void Post([FromBody]string value)
+        [Route("{str}")]
+        public JiraItem Get(string str)
         {
-            
-        }
-
-        // PUT: api/JiraItems/5
-        public void Put(int id, [FromBody]string value)
-        {
-        }
-
-        // DELETE: api/JiraItems/5
-        public void Delete(int id)
-        {
+            int id;
+            var isParced = int.TryParse(str, out id);
+            var jiraItem = Data.JiraItems.SingleOrDefault(x => x.JiraItemId == id);
+            if (jiraItem != null)
+            {
+                return jiraItem;
+            }
+            else
+            {
+                var message = $"JiraItem with id = {id} not found";
+                throw new HttpResponseException(Request.CreateErrorResponse(HttpStatusCode.NotFound, message));
+            }
         }
     }
 }

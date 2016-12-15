@@ -22,7 +22,7 @@ namespace SDSK.API
                         MailId = 1,
                         FileName = "name1",
                         Path = "path1",
-                        StatusId = 1,
+                        StatusId = 2,
                         FileExtention = "file"
                     },
                     new Attachement()

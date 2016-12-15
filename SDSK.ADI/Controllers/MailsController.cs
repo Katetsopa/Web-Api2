@@ -16,8 +16,9 @@ namespace SDSK.API.Controllers
             return Data.Mails;
         }
 
+
         //GET /api/mails/{id}
-        public Mail Get(int id)
+        public Mail Get(long id)
         {
             var mail = Data.Mails.SingleOrDefault(x => x.Id == id);
             if (mail != null)
@@ -28,6 +29,7 @@ namespace SDSK.API.Controllers
                 throw new HttpResponseException(Request.CreateErrorResponse(HttpStatusCode.NotFound, message));
             }
         }
+
 
         //POST /api/mails
         public void Post([FromBody]Mail mail)
@@ -43,8 +45,9 @@ namespace SDSK.API.Controllers
             }
         }
 
+
         //PUT /api/mails/{id}
-        public void Put(int id, [FromBody]Mail mail)
+        public void Put(long id, [FromBody]Mail mail)
         {
             if (mail != null && ModelState.IsValid)
             {
@@ -67,8 +70,9 @@ namespace SDSK.API.Controllers
             }
         }
 
+
         //DELETER /api/mails/{id}
-        public void Delete(int id)
+        public void Delete(long id)
         {
             var mail = Data.Mails.SingleOrDefault(x => x.Id == id);
             if (mail != null)
